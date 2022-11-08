@@ -59,5 +59,18 @@
       nemo aliquid pariatur quam voluptates animi laudantium, aperiam
       consectetur nobis enim.
     </p>
+    <dl x-data="{lorem: false}">
+      <dt @click=" lorem = ! lorem">Lorem.</dt>
+      <dd x-show="lorem">Lorem ipsum dolor sit amet.</dd>
+    </dl>
+    <dl x-data="{dolo: false}">
+      <dt @click=" dolo = ! dolo">Doloremque!</dt>
+      <dd x-show="dolo">Minus rerum error nam totam.</dd>
+    </dl>
+    <dl x-data="{esse: false}">
+      <dt @click=" esse = ! esse">Esse!</dt>
+      <dd x-show="esse">Repudiandae nisi quis pariatur facere?</dd>
+    </dl>
+
   </body>
 </html>
